@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Spartan:wght@100;200;300;400;500;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(
+    72.06% 119.68% at 27.94% 50.05%,
+    rgba(54, 54, 54, 0.95) 0%,
+    #2b2b2b 100%
+  );
+}
+
+.hero {
+  @apply flex;
+}
+/* Landing Left Starts*/
+.home-left {
+  @apply w-2/4 h-screen flex items-center justify-center h-screen font-body;
+}
+
+.home-left .title-container {
+  @apply text-center transform translate-y-60 translate-x-12 -rotate-90 w-1 text-8xl font-thin overflow-visible relative;
+  color: #40ffef;
+  letter-spacing: 0.2em;
+}
+
+.home-left .title-container .title {
+  @apply absolute top-0 left-0;
+}
+.home-left .title-container .title::selection {
+  background: white;
+}
+
+.home-left .hero-img {
+  @apply p-20 mx-28;
+}
+/* Landing-Left Ends*/
+
+/* Landing-Right Starts */
+.home-right {
+  @apply w-2/4 h-screen flex flex-col items-center justify-evenly;
+}
+
+.home-right .title-section {
+  @apply text-gray-100 font-display font-extrabold text-6xl;
+}
+
+.home-right .title-section .main-title {
+  text-shadow: 7px 5px 0px #ffb94d;
+}
+.home-right .title-section .main-title::selection {
+  background: black;
+}
+
+.home-right .home-links {
+  @apply text-gray-100 font-body m-2 text-2xl;
+}
+
+.home-right .home-links .home-link {
+  @apply p-6;
+}
+
+/* Info Card Starts*/
+.info-card {
+  @apply p-8 flex flex-col items-center justify-center rounded-lg;
+  background: rgba(58, 200, 232, 0.33);
+
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(61px);
+}
+
+.info-card .info-numbers {
+  @apply flex justify-between m-4 w-3/4 font-body text-2xl text-gray-50;
+}
+
+.info-card .info-news {
+  @apply m-6 flex w-3/4 items-center content-center;
+}
+
+.info-card .info-news .info-news-icon {
+  @apply w-12 mr-4;
+}
+
+.info-card .info-news .info-news-headline {
+  @apply font-body text-2xl text-gray-50  underline;
+}
+
+/* Info Card Ends */
+/* Landing-Right Ends */
